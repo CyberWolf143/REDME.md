@@ -25,18 +25,22 @@ provides feedback, and generates strong passwords and secure passphrases.
   pip install zxcvbn
 
 ---
-
 ## 🚀 Installation
 
 1. Clone the repository:
-   git clone https://github.com/CyberWolf143/REDME.md.git
+```bash
+git clone https://github.com/CyberWolf143/REDME.md.git
+```
 
-2. Go to the project folder:
-   cd REDME.md
+2. Navigate to the project folder:
+```bash
+cd REDME.md
+```
 
 3. (Optional) Install zxcvbn:
-   pip install zxcvbn
-
+```bash
+pip install zxcvbn
+```
 ---
 
 ## ▶️ Usage
