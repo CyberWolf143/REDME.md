@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegray}{rgb}{0.95,0.95,0.95}
+
+\lstset{
+  backgroundcolor=\color{codegray},
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single
+}
+
+\title{\textbf{Password Strength Checker \& Generator}}
+\author{Python Security Tool}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Introduction}
+This project is a Python-based Password Strength Checker and Generator.
+It evaluates password security, provides feedback, and generates strong
+passwords and passphrases.
+
+\section*{Features}
+\begin{itemize}
+  \item Password strength scoring (0--5)
+  \item zxcvbn support (if available)
+  \item Fallback strength checker
+  \item Strong password generator
+  \item Secure passphrase generator
+  \item Bulk password checking from file
+  \item Save generated passwords to file
+\end{itemize}
+
+\section*{Requirements}
+\begin{itemize}
+  \item Python 3.7 or higher
+  \item Optional: zxcvbn library
+\end{itemize}
+
+\section*{Installation}
+\begin{lstlisting}
+pip install zxcvbn
+\end{lstlisting}
+
+\section*{Usage}
+
+\subsection*{Interactive Mode}
+\begin{lstlisting}
+python password_tool_advanced.py
+\end{lstlisting}
+
+\subsection*{Bulk Mode}
+\begin{lstlisting}
+python password_tool_advanced.py passwords.txt
+\end{lstlisting}
+
+\section*{Output}
+Generated passwords and passphrases are saved in:
+\begin{lstlisting}
+output/suggested_passwords.txt
+\end{lstlisting}
+
+\section*{Strength Levels}
+\begin{itemize}
+  \item 0 -- Very Weak
+  \item 1 -- Weak
+  \item 2 -- Fair
+  \item 3 -- Good
+  \item 4 -- Strong
+\end{itemize}
+
+\section*{Example Password}
+\begin{lstlisting}
+X9@qL!2Fv^sA
+\end{lstlisting}
+
+\section*{Example Passphrase}
+\begin{lstlisting}
+matrix-galaxy-cyber-delta
+\end{lstlisting}
+
+\section*{Conclusion}
+This tool helps users create secure passwords and understand password
+strength best practices.
+
+\end{document}
